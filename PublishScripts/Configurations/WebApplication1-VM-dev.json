@@ -1,0 +1,70 @@
+{
+    "environmentSettings": {
+        "cloudService": {
+            "name": "notification-VM",
+            "affinityGroup": "",
+            "location": "Japan West",
+            "virtualNetwork": "",
+            "subnet": "",
+            "availabilitySet": "",
+            "virtualMachine": {
+                "name": "notification-VM",
+                "vhdImage": "3a50f22b388a4ff7ab41029918570fa6__Windows-Server-2012-Essentials-20141204-enus",
+                "size": "Medium",
+                "user": "kj4",
+                "password": "",
+                "endpoints": [
+                    {
+                        "name": "Http",
+                        "protocol": "TCP",
+                        "publicPort": "80",
+                        "privatePort": "80"
+                    },
+                    {
+                        "name": "Https",
+                        "protocol": "TCP",
+                        "publicPort": "443",
+                        "privatePort": "443"
+                    },
+                    {
+                        "name": "WebDeploy",
+                        "protocol": "TCP",
+                        "publicPort": "8172",
+                        "privatePort": "8172"
+                    },
+                    {
+                        "name": "Remote Desktop",
+                        "protocol": "TCP",
+                        "publicPort": "3389",
+                        "privatePort": "3389"
+                    },
+                    {
+                        "name": "Powershell",
+                        "protocol": "TCP",
+                        "publicPort": "5986",
+                        "privatePort": "5986"
+                    }
+                ],
+                "enableWebDeployExtension": true,
+                "isVMImage": false,
+                "isGeneralizedImage": true,
+                "dockerServerPortKey": "",
+                "dockerCACertFilePathKey": "",
+                "dockerServerCertFilePathKey": "",
+                "dockerServerKeyFilePathKey": ""
+            }
+        },
+        "databases": [
+            {
+                "connectionStringName": "",
+                "databaseName": "",
+                "serverName": "",
+                "user": "",
+                "password": ""
+            }
+        ],
+        "webDeployParameters": {
+            "iisWebApplicationName": "Default Web Site"
+        }
+    }
+}

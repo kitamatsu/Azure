@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{8C901A85-8D8A-4DBE-9BF1-BE51F90ABE40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{750345ED-B967-4FF8-82D0-B0467E736E91}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{0E3C6E5C-A734-4DC8-A53C-AB5A249608FF}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\WebApplication1-VM-dev.json = PublishScripts\Configurations\WebApplication1-VM-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C901A85-8D8A-4DBE-9BF1-BE51F90ABE40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C901A85-8D8A-4DBE-9BF1-BE51F90ABE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C901A85-8D8A-4DBE-9BF1-BE51F90ABE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C901A85-8D8A-4DBE-9BF1-BE51F90ABE40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E3C6E5C-A734-4DC8-A53C-AB5A249608FF} = {750345ED-B967-4FF8-82D0-B0467E736E91}
+	EndGlobalSection
+EndGlobal
